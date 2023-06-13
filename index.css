@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'American Typewriter';
+    src: url('AmericanTypewriter.woff2') format('woff2'),
+         url('AmericanTypewriter.woff') format('woff');
+}
+
+body {
+    margin: 0;
+    font-family: 'American Typewriter', sans-serif;
+    min-height: 100vh; 
+    position: relative; 
+}
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1; 
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;  
+    margin: auto;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    box-sizing: border-box;
+}
+
+.header a,
+.nav a {
+    display: inline-block;  
+    text-decoration: none;
+    color: #8C7853;
+    font-weight: bold;
+    padding: 10px 10px; 
+    border-radius: 5px; 
+    background-color: #1C1712;  
+    margin: 0 10px;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+    line-height: 1.4em; 
+    text-align: center;  
+}
+
+.header a:hover,
+.nav a:hover {
+    background-color: #1C1712;
+    color: #8C7853;
+    opacity: 0.3;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    color :black;
+}
